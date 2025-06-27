@@ -13,6 +13,10 @@ function Energy() {
     { image: energy4, carName: "Megapack", btnOne: "Learn", btnTwo: "Order" },
   ]
 
+  const list = [
+    "Schedule a Consultation", "Why Solar", "Incentives", "Support", "Partner with Tesla", "Commercial", "Utilities"
+  ]
+
   return (
     <div className='relative group '>
       <button className='px-5 py-1 lg:hover:bg-gray-200 rounded-md  duration-600 cursor-pointer'>Energy</button>
@@ -32,13 +36,13 @@ function Energy() {
           </div>
           <div>
             <ul className='space-y-3 px-13 lg:text-base text-lg'>
-              <li><a className='hover:border-b-2 border-black whitespace-nowrap'>Schedule a Consultation</a></li>
-              <li><a className='hover:border-b-2 border-black'>Why Solar</a></li>
-              <li><a className='hover:border-b-2 border-black'>Incentives</a></li>
-              <li><a className='hover:border-b-2 border-black'>Support</a></li>
-              <li><a className='hover:border-b-2 border-black'>Partner with Tesla</a></li>
-              <li><a className='hover:border-b-2 border-black'>Commercial</a></li>
-              <li><a className='hover:border-b-2 border-black'>Utilities</a></li>
+              {
+                list.map((lt, index) => (
+                  <li key={index}>
+                    <li><a className='hover:border-b-2 border-black whitespace-nowrap'>{lt}</a></li>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>

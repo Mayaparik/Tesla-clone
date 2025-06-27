@@ -17,6 +17,10 @@ function Vehicles() {
         { image: model6, carName: "Inventory", btnOne: "Learn", btnTwo: "Order" }
     ]
 
+    const list =[
+        "Help Me Choose", "Demo Drive", "Trade-in", "Compare", "Workshop", "Help me Charge", "Fleet", "Semi", "Roadster", "Federal Tax Credit"
+    ]
+
     return (
         <div className='relative group '>
             <button className='px-5 py-1 lg:hover:bg-gray-200 rounded-md  duration-600 cursor-pointer'>Vehicles</button>
@@ -36,16 +40,13 @@ function Vehicles() {
                     </div>
                     <div>
                         <ul className='space-y-3  md:px-13 md:text-base text-lg mb-4 '>
-                            <li><a className='hover:border-b-2 border-black'>Help Me Choose</a></li>
-                            <li><a className='hover:border-b-2 border-black'>Demo Drive</a></li>
-                            <li><a className='hover:border-b-2 border-black'>Trade-in</a></li>
-                            <li><a className='hover:border-b-2 border-black'>Compare</a></li>
-                            <li><a className='hover:border-b-2 border-black'>Workshops</a></li>
-                            <li><a className='hover:border-b-2 border-black'>Help Me Charge</a></li>
-                            <li><a className='hover:border-b-2 border-black'>Fleet</a></li>
-                            <li><a className='hover:border-b-2 border-black'>Semi</a></li>
-                            <li><a className='hover:border-b-2 border-black'>Roadster</a></li>
-                            <li><a className='hover:border-b-2 border-black whitespace-nowrap'>Federal Tax Credit</a></li>
+                            {
+                                list.map((lt, index) => (
+                                    <li key={index}>
+                                        <li><a className='hover:border-b-2 border-black whitespace-nowrap'>{lt}</a></li>
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                 </div>
