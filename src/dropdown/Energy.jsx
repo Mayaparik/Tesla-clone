@@ -14,7 +14,8 @@ function Energy() {
   ]
 
   const list = [
-    "Schedule a Consultation", "Why Solar", "Incentives", "Support", "Partner with Tesla", "Commercial", "Utilities"
+    "Schedule a Consultation", "Why Solar", "Incentives",
+     "Support", "Partner with Tesla", "Commercial", "Utilities"
   ]
 
   return (
