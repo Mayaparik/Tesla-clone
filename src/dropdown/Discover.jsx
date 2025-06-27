@@ -3,11 +3,14 @@ import React from 'react'
 function Discover() {
 
     const List1 = [
-        "Demo Drive", "Insurance", "American Heroes", "Learn", "Video Guides", "Customer Stories", "Events", "Workshops"
+        "Demo Drive", "Insurance", "American Heroes",
+         "Learn", "Video Guides", "Customer Stories",
+          "Events", "Workshops"
     ]
 
     const List2 = [
-        "Find Us", "Find a Collision Center", "Find a Certified Installer"
+        "Find Us", "Find a Collision Center",
+         "Find a Certified Installer"
     ]
 
     const List3 = [
