@@ -17,9 +17,9 @@ function ChargeSection() {
                     </div>
                 </div>
             </div>
-            <div className='space-x-4'>
-                <button className=' bg-black cursor-pointer text-white rounded-md py-2 px-6 font-semibold text-sm'>View Network</button>
-                <button className=' bg-gray-100 cursor-pointer text-black rounded-md py-2 px-6 font-semibold text-sm'>Learn More</button>
+            <div className='space-x-4 space-y-4'>
+                <button className=' bg-black cursor-pointer text-white rounded-md py-2  font-semibold text-sm md:w-35 whitespace-nowrap  w-full'>View Network</button>
+                <button className=' bg-gray-100 cursor-pointer text-black rounded-md py-2  font-semibold text-sm md:w-35 whitespace-nowrap w-full'>Learn More</button>
             </div>
         </div>
     )

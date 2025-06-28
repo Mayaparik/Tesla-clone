@@ -10,7 +10,7 @@ function HeroSection() {
    useEffect(() => {
        const timer = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % images.length)
-        }, 15000)
+        }, 10000)
         
         return () => clearInterval(timer)
    }, []);
